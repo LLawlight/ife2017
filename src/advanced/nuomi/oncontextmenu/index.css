@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+}
+
+#contextmenu {
+  position: fixed;
+  border: 1px solid #999;
+  list-style: none;
+  z-index: 999;
+  width: 150px;
+  display: none;
+  user-select: none;
+}
+
+#contextmenu li {
+  border-top: 1px solid #eee;
+  padding: 5px;
+}
+
+#contextmenu li:first-child {
+  border-top: none;
+}
+
+#contextmenu li:hover {
+  background-color: #eee;
+  cursor: default;
+}
+
+#contextmenu li a {
+  color: #333;
+  text-decoration: none;
+}
