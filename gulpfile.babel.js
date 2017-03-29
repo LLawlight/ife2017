@@ -30,3 +30,8 @@ gulp.task('js', () => {
 })
 
 gulp.task('default', ['less', 'js'])
+
+gulp.task('watch', function () {
+    gulp.watch(`${paths.less}**/*.less`, ['less']);
+    gulp.watch(`${paths.js}**/*.js`, ['js']);
+});

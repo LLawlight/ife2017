@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>UI组件之色彩选择器</title>
+  <link rel="stylesheet" href="../../../dist/css/colorPicker/colorPicker.css">
+  <script src="../../../dist/js/colorPicker/colorPicker.js" charset="utf-8"></script>
+</head>
+<body>
+  <div class="color-picker-wrapper">
+    <div class="color-picker-container">
+      <canvas id="color-picker" width="300" height="300"></canvas>
+      <div class="picker"></div>
+    </div>
+    <div class="main-color-picker-container">
+      <canvas id="main-color-picker" width="20" height="300"></canvas>
+      <div class="picker-main"></div>
+    </div>
+    <div class="color-number">
+      <div class="color-rgb">
+        <label for="R">R: </label><input id="R" type="number" max="255" min="0" value="0" />
+        <label for="G">G: </label><input id="G" type="number" max="255" min="0" value="0" />
+        <label for="B">B: </label><input id="B" type="number" max="255" min="0" value="0" />
+      </div>
+      <hr />
+      <div class="color-hsl">
+        <label for="H">H: </label><input id="H" type="number" max="360" min="0" value="360" />
+        <label for="S">S: </label><input id="S" type="number" max="100" min="0" value="100" />
+        <label for="L">L: </label><input id="L" type="number" max="100" min="0" value="50" />
+      </div>
+    </div>
+  </div>
+</body>
+</html>
